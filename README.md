@@ -4,6 +4,8 @@
 
 The UI is crafted with **Tailwind CSS v4** for a sleek, dark-mode-ready aesthetic that remains performant at scale.
 
+Live URL: (https://admin-dashboard-ansary.vercel.app/)
+
 ![alt text](image.png)
 
 ## 🚀 Key Features
