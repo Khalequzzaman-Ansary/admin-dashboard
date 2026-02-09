@@ -19,3 +19,12 @@ The UI is crafted with **Tailwind CSS v4** for a sleek, dark-mode-ready aestheti
 - **Utility-First Styling:** Custom `cn` utility for conflict-free Tailwind class merging (`clsx + tailwind-merge`).
 
 - **Dark Mode Ready:** Built-in semantic color classes supporting light and dark themes out of the box.
+
+## 🛠️ Tech Stack
+
+| Category      | Technology           | Description                                          |
+| :------------ | :------------------- | :--------------------------------------------------- |
+| **Framework** | [Next.js 16](#)      | App Router, Server Components, TurboPack             |
+| **Language**  | [TypeScript](#)      | Static typing for enterprise reliability             |
+| **Styling**   | [Tailwind CSS v4](#) | Utility-first CSS framework                          |
+| **State**     | [Zustand](#)         | Small, fast, and scalable barebones state management |
