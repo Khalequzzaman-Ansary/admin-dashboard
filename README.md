@@ -113,6 +113,21 @@ admin-dashboard/
 1. **Clone the repository:**
 
 ```
-git clone [text](https://github.com/Khalequzzaman-Ansary/admin-dashboard.git)
+git clone (https://github.com/Khalequzzaman-Ansary/admin-dashboard.git)
+
 cd admin-dashboard
 ```
+
+2. **Install dependencies:**
+
+```
+npm install
+```
+
+3. **Run the development server:**
+
+```
+npm run dev
+```
+
+4. **Open your browser:** Navigate to (http://localhost:3000) to view the dashboard.
