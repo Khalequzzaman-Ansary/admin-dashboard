@@ -35,4 +35,68 @@ The UI is crafted with **Tailwind CSS v4** for a sleek, dark-mode-ready aestheti
 
 ## 📂 Project Structure
 
-The project follows a scalable **"`feature-folder`"** pattern:
+The project follows a scalable **`"feature-folder"`** pattern:
+
+```
+admin-dashboard/
+├── .git/                          # Git repository
+├── .gitignore                     # Git ignore rules
+├── .next/                         # Next.js build output
+├── node_modules/                  # Project dependencies
+├── public/                        # Static assets
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── src/
+│   ├── app/                       # Next.js App Router pages
+│   │   ├── (dashboard)/           # Dashboard route group
+│   │   ├── globals.css            # Global styles
+│   │   ├── layout.tsx             # Root layout
+│   │   ├── page.tsx               # Home page
+│   │   └── favicon.ico
+│   │
+│   ├── components/                # Reusable React components
+│   │   ├── charts/                # Data visualization components
+│   │   │   ├── OrdersChart.tsx
+│   │   │   ├── RevenueChart.tsx
+│   │   │   └── UserPieChart.tsx
+│   │   │
+│   │   ├── dashboard/             # Dashboard-specific widgets
+│   │   │   ├── DashboardFilter.tsx
+│   │   │   ├── KPICard.tsx
+│   │   │   └── RecentTransactions.tsx
+│   │   │
+│   │   ├── layout/                # Global layout components
+│   │   │   ├── DashboardLayout.tsx
+│   │   │   ├── Header.tsx
+│   │   │   └── Sidebar.tsx
+│   │   │
+│   │   └── ui/                    # Atomic UI components
+│   │       └── Card.tsx
+│   │
+│   ├── hooks/                     # Custom React hooks
+│   │
+│   ├── lib/                       # Utility functions
+│   │   └── utils.ts               # Helper utilities (cn, etc.)
+│   │
+│   ├── services/                  # API and data services
+│   │   ├── api.ts                 # API client
+│   │   └── mockData.ts            # Mock data adapters
+│   │
+│   ├── store/                     # Global state management (Zustand)
+│   │   └── useStore.ts            # Global store
+│   │
+│   └── types/                     # TypeScript type definitions
+│       └── index.ts               # Central type exports
+│
+├── eslint.config.mjs              # ESLint configuration
+├── next.config.ts                 # Next.js configuration
+├── next-env.d.ts                  # Next.js type definitions
+├── package.json                   # Project dependencies and scripts
+├── package-lock.json              # Locked dependency versions
+├── postcss.config.mjs             # PostCSS configuration
+├── tsconfig.json                  # TypeScript configuration
+└── README.md                      # Project documentation
+```
