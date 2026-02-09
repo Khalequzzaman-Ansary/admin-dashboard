@@ -22,9 +22,13 @@ The UI is crafted with **Tailwind CSS v4** for a sleek, dark-mode-ready aestheti
 
 ## 🛠️ Tech Stack
 
-| Category      | Technology           | Description                                          |
-| :------------ | :------------------- | :--------------------------------------------------- |
-| **Framework** | [Next.js 16](#)      | App Router, Server Components, TurboPack             |
-| **Language**  | [TypeScript](#)      | Static typing for enterprise reliability             |
-| **Styling**   | [Tailwind CSS v4](#) | Utility-first CSS framework                          |
-| **State**     | [Zustand](#)         | Small, fast, and scalable barebones state management |
+| Category      | Technology                                     | Description                                          |
+| :------------ | :--------------------------------------------- | :--------------------------------------------------- |
+| **Framework** | [Next.js 16](https://nextjs.org)               | App Router, Server Components, TurboPack             |
+| **Language**  | [TypeScript](https://www.typescriptlang.org)   | Static typing for enterprise reliability             |
+| **Styling**   | [Tailwind CSS v4](https://tailwindcss.com)     | Utility-first CSS framework                          |
+| **State**     | [Zustand](https://github.com/pmndrs/zustand)   | Small, fast, and scalable barebones state management |
+| **Charts**    | [Recharts](https://recharts.org)               | Composable charting library for React                |
+| **Icons**     | [Lucide React](https://lucide.dev)             | Consistent, lightweight icons                        |
+| **Utils**     | [Date-fns](https://date-fns.org)               | Modern JavaScript date utility library               |
+| **Animation** | [Framer Motion](https://www.framer.com/motion) | Production-ready animation library                   |
