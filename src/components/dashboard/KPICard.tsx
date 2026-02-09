@@ -1,5 +1,5 @@
 import { ArrowUpRight, ArrowDownRight, Minus } from 'lucide-react';
-import { Card } from '@/components/ui/Card'; // ensure you created this in step 4D
+import { Card } from '@/components/ui/Card';
 import { cn } from '@/lib/utils';
 import { KPI } from '@/types';
 

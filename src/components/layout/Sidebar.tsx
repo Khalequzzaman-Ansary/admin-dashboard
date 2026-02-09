@@ -7,8 +7,8 @@ import { cn } from '@/lib/utils';
 
 const MENU_ITEMS = [
     { icon: LayoutDashboard, label: 'Dashboard', href: '/' },
-    { icon: Users, label: 'Users', href: '/users' }, // Placeholder route
-    { icon: BarChart3, label: 'Analytics', href: '/analytics' }, // Placeholder
+    { icon: Users, label: 'Users', href: '/users' },
+    { icon: BarChart3, label: 'Analytics', href: '/analytics' },
     { icon: Settings, label: 'Settings', href: '/settings' },
 ];
 

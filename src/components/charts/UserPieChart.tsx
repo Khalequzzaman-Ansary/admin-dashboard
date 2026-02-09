@@ -11,7 +11,7 @@ const COLORS = ['#94a3b8', '#3b82f6', '#6366f1']; // Slate, Blue, Indigo
 
 export function UserPieChart({ data }: UserPieChartProps) {
     return (
-        <Card className="h-[400px] flex flex-col">
+        <Card className="h-100 flex flex-col">
             <div className="mb-6">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">
                     User Distribution

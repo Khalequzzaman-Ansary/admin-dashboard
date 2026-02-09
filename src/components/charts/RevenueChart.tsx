@@ -1,8 +1,6 @@
 'use client';
 
 import {
-    LineChart,
-    Line,
     XAxis,
     YAxis,
     CartesianGrid,
@@ -33,7 +31,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
 export function RevenueChart({ data }: RevenueChartProps) {
     return (
-        <Card className="h-[400px] flex flex-col">
+        <Card className="h-100 flex flex-col">
             <div className="mb-6">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">
                     Revenue Over Time

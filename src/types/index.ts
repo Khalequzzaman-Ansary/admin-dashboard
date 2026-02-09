@@ -21,7 +21,7 @@ export interface Transaction {
   user: {
     name: string;
     email: string;
-    avatar: string; // URL or initials
+    avatar: string; 
   };
   amount: number;
   status: 'completed' | 'processing' | 'failed';

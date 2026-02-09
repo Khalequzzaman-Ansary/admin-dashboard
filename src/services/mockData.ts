@@ -1,4 +1,3 @@
-// src/services/mockData.ts
 import { DashboardData } from '@/types';
 
 export const MOCK_DATA: DashboardData = {
@@ -57,9 +56,9 @@ export const MOCK_DATA: DashboardData = {
     { name: 'Dec', value: 85 },
   ],
   userDistribution: [
-    { name: 'Free', value: 400, fill: '#94a3b8' },      // slate-400
-    { name: 'Premium', value: 300, fill: '#3b82f6' },   // blue-500
-    { name: 'Enterprise', value: 100, fill: '#6366f1' }, // indigo-500
+    { name: 'Free', value: 400, fill: '#94a3b8' },      
+    { name: 'Premium', value: 300, fill: '#3b82f6' },   
+    { name: 'Enterprise', value: 100, fill: '#6366f1' }, 
   ],
   recentTransactions: [
     {

@@ -13,7 +13,7 @@ import { Download } from 'lucide-react';
 export default function DashboardPage() {
   const { data, isLoading, fetchData, error } = useDashboardStore();
 
-  // Initial Fetch
+  /* Initial Fetch */
   useEffect(() => {
     fetchData();
   }, [fetchData]);
@@ -29,14 +29,14 @@ export default function DashboardPage() {
   const handleExport = () => {
     if (!data) return;
 
-    // 1. Convert JSON to CSV string
+    /* Convert JSON to CSV string */
     const headers = ['ID', 'User', 'Amount', 'Status', 'Date'];
     const rows = data.recentTransactions.map(t =>
       [t.id, t.user.name, t.amount, t.status, t.date].join(',')
     );
     const csvContent = [headers.join(','), ...rows].join('\n');
 
-    // 2. Trigger Download
+    /* Trigger Download */
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -59,7 +59,7 @@ export default function DashboardPage() {
           onClick={handleExport}
           className="flex items-center gap-2 bg-white border border-slate-300 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-50 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-700 transition-colors"
         >
-          <Download size={16} /> {/* Import Download from lucide-react */}
+          <Download size={16} />
           Export
         </button>
       </div>
@@ -70,7 +70,7 @@ export default function DashboardPage() {
       {/* KPI Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {isLoading || !data ? (
-          // Simple Skeleton for KPIs
+          /* Skeleton for KPIs */
           Array(4).fill(0).map((_, i) => (
             <div key={i} className="h-32 bg-slate-200 dark:bg-slate-700 rounded-xl animate-pulse" />
           ))
@@ -84,7 +84,7 @@ export default function DashboardPage() {
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
         {isLoading || !data ? (
-          // Skeleton for Charts
+          /* Skeleton for Charts */
           <>
             <div className="h-100 bg-slate-200 dark:bg-slate-800 rounded-xl animate-pulse" />
             <div className="h-100 bg-slate-200 dark:bg-slate-800 rounded-xl animate-pulse" />
@@ -97,7 +97,7 @@ export default function DashboardPage() {
         )}
       </div>
 
-      {/* Bottom Section (Pie Chart + maybe a table later) */}
+      {/* Bottom Section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
         {/* Pie Chart takes up 1 column */}
         <div className="lg:col-span-1">
