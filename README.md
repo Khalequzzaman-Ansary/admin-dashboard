@@ -4,6 +4,8 @@
 
 The UI is crafted with **Tailwind CSS v4** for a sleek, dark-mode-ready aesthetic that remains performant at scale.
 
+![alt text](image.png)
+
 ## 🚀 Key Features
 
 - **Modern Tech Stack:** Built on the bleeding edge with `Next.js 16`, `React 19`, and `Tailwind CSS 4`.
