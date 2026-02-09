@@ -131,3 +131,56 @@ npm run dev
 ```
 
 4. **Open your browser:** Navigate to (http://localhost:3000) to view the dashboard.
+
+## 🔧 Configuration & Customization
+
+**Theming**
+
+- **Tailwind entry:** Customize theme tokens and base styles in [src/app/globals.css](src/app/globals.css).
+- **Colors & tokens:** Update Tailwind configuration or CSS custom properties to change semantic colors used by the UI components.
+- **Dark mode:** The template supports dark mode by default. To change default behavior or class strategy, update the layout or theme utilities in the app layout components.
+
+**Data Integration**
+
+- **API client:** Configure your backend URL and endpoints in [src/services/api.ts](src/services/api.ts). Replace or extend the example client with `axios` or the `fetch` API as preferred.
+- **Mock data:** The dashboard uses mock data in [src/services/mockData.ts](src/services/mockData.ts). Swap the mock adapters for real API calls when integrating a backend.
+- **Store wiring:** Replace mock calls in [src/store/useStore.ts](src/store/useStore.ts) (or in fetching components) with real fetch logic and keep selectors intact for minimal UI changes.
+
+**Environment variables**
+
+- **Local env file:** Add a `.env.local` in the project root and include values used by your `api.ts` client:
+
+```
+NEXT_PUBLIC_API_BASE_URL=https://api.example.com
+NEXT_PUBLIC_OTHER_KEY=your_value_here
+```
+
+- **Usage:** Read values via `process.env.NEXT_PUBLIC_API_BASE_URL` inside the client or components.
+
+**Charts & Widgets**
+
+- **Recharts:** Customize palettes, tooltip formats, and axis options inside the chart components under [src/components/charts](src/components/charts).
+- **KPI & cards:** Tweak `src/components/dashboard/KPICard.tsx` and `src/components/ui/Card.tsx` for different layouts or additional actions.
+
+**State & Data Fetching**
+
+- **Zustand store:** Keep derived UI state in [src/store/useStore.ts](src/store/useStore.ts). For async data, fetch in components or custom hooks and optionally hydrate the store.
+- **Recommendations:** Use `axios` interceptors in `src/services/api.ts` for auth and error handling. Consider `@tanstack/react-query` for caching and background refresh if needed.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
+
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+
+5. Open a Pull Request.
+
+---
+
+Built with ❤️ by [Khalequzzaman Ansary](https://ansary-portfolio.vercel.app/)
