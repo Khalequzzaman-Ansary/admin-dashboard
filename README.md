@@ -100,3 +100,19 @@ admin-dashboard/
 ├── tsconfig.json                  # TypeScript configuration
 └── README.md                      # Project documentation
 ```
+
+## ⚡️ Getting Started
+
+**Prerequisites**
+
+- `Node.js 18+ (LTS recommended)`
+- `npm or yarn`
+
+**Installation**
+
+1. **Clone the repository:**
+
+```
+git clone [text](https://github.com/Khalequzzaman-Ansary/admin-dashboard.git)
+cd admin-dashboard
+```
