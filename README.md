@@ -32,3 +32,7 @@ The UI is crafted with **Tailwind CSS v4** for a sleek, dark-mode-ready aestheti
 | **Icons**     | [Lucide React](https://lucide.dev)             | Consistent, lightweight icons                        |
 | **Utils**     | [Date-fns](https://date-fns.org)               | Modern JavaScript date utility library               |
 | **Animation** | [Framer Motion](https://www.framer.com/motion) | Production-ready animation library                   |
+
+## 📂 Project Structure
+
+The project follows a scalable **"`feature-folder`"** pattern:
